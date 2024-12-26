@@ -1,0 +1,535 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+#page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+
+}
+
+ 
+
+#page>video{
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 20px;
+  color: #ffffff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+/* */
+/* General styles */
+ 
+
+.navbar {
+  width: 100%;
+  position: absolute;
+   top: 0;
+   margin-bottom: 51%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row; 
+  background-color: #000000;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fffafa;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: #ffffff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  flex-direction: row; /* Default layout for larger screens */
+}
+
+ 
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.buy-button {
+  background-color: #007aff;
+  width: 70px;
+  /* background-color: #005bb5; */
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-left: 9px;
+}
+
+.buy-button:hover {
+  background-color: #005bb5e5;
+}
+
+/* Content styles */
+.content {
+  padding: 20px;
+}
+
+
+
+/*  */
+
+ 
+
+#page-bottom{
+    height: 20%;
+    width: 25%;
+    /* background-color: green; */
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#page-bottom>h3{
+    color: #dadada93;
+    margin-bottom: 1vw;
+}
+
+#page-bottom>img{
+     width: 378px;
+}
+#page1 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+}
+
+#page1>video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+#page1>h3{
+  width: 70%;
+  font-size: 45px;
+  font-weight: 900;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+   margin-bottom: 50px;
+   color: #fff;
+   
+}
+
+#page1>button{
+  position: absolute;
+   top: 70%;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 215px;
+   height: 61.5px;
+   font-size: 17px;  
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+  border: 4px solid #F56300;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #fff;
+  padding: 15px 31px 12px 27px;
+  margin: 80px 0px 0px;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#page1>button:hover{
+  border: 4px solid #F56300;
+  background-color: #F56300;
+}
+
+#page1>button>i{
+  position: relative;
+   right: 5px;
+  font-size: 20px;
+}
+
+#page2{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#page2>.banner-vison{
+  width: 300px;
+}
+
+ #page2>button{
+   width: 259.54px;
+   height: 62px;
+   font-size: 19px;
+   padding: 15px 37px 15px 27px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   border: 4px solid #1d1d1f;
+   border-radius: 50px;
+   background-color: transparent;
+   font-weight: 500;
+ }
+
+ #page2>#vision-pro{
+  width: 80vw;
+  object-fit: cover;
+
+ }
+
+ #page2>button:hover{
+   border: 4px solid #1d1d1f;
+   background-color: #1D1D1F;
+   color: #fff;
+ }
+
+
+ #page2>button>i{
+   position: relative;
+   top: 2px;
+   right: 7px;
+   font-size: 20px;
+ }
+
+
+
+
+ #page3{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #F5F5F7;
+  padding: 180px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  /* line-height: 80px; */
+
+ }
+
+ #page3>h2{
+  font-size: 24px;
+  color: #1D1D1F;
+  margin-bottom: 15px;
+ }
+
+ #page3>p{
+  text-align: center;
+  width: 980px;
+  font-size: 80px;
+  color: #1D1D1F;
+  line-height: 90px;
+  font-weight: 700;
+ }
+
+
+#page3>video{
+  width: 95%;
+  height: 100vh;
+  object-fit: cover;  
+  margin-top: 20px;
+}
+
+
+ #page4{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 150px;
+  bottom: 50%;
+   left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+#page4>.left-h{
+  width: 30%;
+  font-size: 30px;
+  color: #1D1D1F;
+}
+
+#page4>.right-h{
+width: 40%;
+margin-top: 150px;
+margin-right: 250px;
+font-size: 20px;
+}
+
+#page4>.right-h>p{
+  color: #88888D;
+  font-weight: 700;
+}
+
+#page4>.right-h>button{
+  width: 400.73px;
+  height: 58px;
+  border-radius: 50px;
+  padding: 16px 37px 17px 27px;
+  background-color: #ff5a00;
+  color: #fff;
+  border: none; 
+  margin-top: 30px;
+  font-size: 19px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+#page4>.right-h>button>i{
+  position: relative;
+  top: 2px;
+  right: 7px;
+  font-size: 20px;
+}
+
+#page4>.right-h>button:hover{
+  background-color: #ff5900e3;
+  color: #fff;
+}
+
+ 
+ 
+
+
+
+
+/* Responsive design for tablets and mobiles */
+
+
+/*  RESPONSIVE  START*/
+
+ 
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show the menu toggle button */
+     position: absolute;
+     right: 15px;
+  }
+
+   
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+   
+   
+  #page>video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .nav-links {
+    flex-direction: column; /* Stack links for smaller screens */
+    display: none; /* Hidden by default */
+    background-color: #000000; /* Background color for dropdown */
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    position: absolute;
+    top: 70%;
+    left:  0;
+    width: 100%;
+     z-index: 1;
+    transition: max-height 0.3s ease-out;
+  }
+
+   
+  .nav-links.active {
+    display: flex; /* Show links when active */
+  }
+
+  .nav-links li a {
+    padding: 10px 0; /* Increase spacing for better touch usability */
+    margin-left: 10px;
+     
+  }
+
+  #page-bottom>img{
+    width: 300px;
+}
+
+#page1>h3{
+    position: relative;
+    font-size: 30px;
+    margin-bottom: 0px;
+    /*  */
+}
+
+#page1>button{
+     
+    /* margin-top: 150px; */
+}
+
+
+
+#page2{
+     
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+
+#page3>h2{
+  font-size: 25px;
+}
+
+#page3>p{
+  width: 90%;
+  font-size: 8vw;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+
+#page4{
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+
+#page4>.left-h{
+  font-size: 6vw;
+  width: 100%;
+  
+   
+}
+
+#page4>.right-h{
+  width: 100%;
+  font-size: 3vw;
+  text-align: center;
+  margin-left: 200px;
+  line-height: 20px;
+  margin-bottom: 50px;
+}
+
+ 
+
+ 
+
+
+/* #page3>video{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+
+}
+
+#page4{
+  position: relative;
+} */
+
+
+  
+
+
+}
+
+
+/*   RESPONSIVE  END */
+
